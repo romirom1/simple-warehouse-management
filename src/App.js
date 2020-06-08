@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {HashRouter as Router, Route, Link} from "react-router-dom";
 import 'semantic-ui-css/semantic.min.css';
 import Warehouse from "./components/Warehouse";
 import SKU from "./components/SKU";
@@ -66,7 +66,7 @@ class App extends Component{
   render() {
     const { activeItem, data } = this.state
     return (
-      <Router>
+      <Router basename='/'>
           <Container>
             <Menu pointing secondary>
               <Menu.Item
@@ -96,7 +96,6 @@ class App extends Component{
               Simple Warehouse Management
             </Header>
 
-            <Switch>
               <Route path="/warehouse">
                 <Warehouse data={data} addGudang={this.addGudang} />
               </Route>
@@ -108,8 +107,6 @@ class App extends Component{
                   Dibuat oleh Romadlon Rahmatulloh
                 </Header>
               </Route>
-            </Switch>
-
           </Container>
       </Router>
     );

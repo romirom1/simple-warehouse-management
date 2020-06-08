@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css';
-import {Label, Table, Menu, Icon, Card, Button, Modal, Form, Dropdown, Pagination} from 'semantic-ui-react';
+import {Label, Table, Icon, Card, Button, Modal, Form, Dropdown, Pagination} from 'semantic-ui-react';
 
 class SKU extends Component{
   constructor(props) {

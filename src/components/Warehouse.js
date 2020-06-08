@@ -33,6 +33,7 @@ class Warehouse extends Component{
       formIsValid = false;
       errors["id_gudang"] = "Tidak Boleh Kosong";
     }else{
+      // eslint-disable-next-line array-callback-return
       this.props.data.map(gudang => {
         if(gudang.id_gudang === fields["id_gudang"]){
           formIsValid = false;
