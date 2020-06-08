@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a61292b9b1702ededf9b3c36e2d59195",
+    "revision": "2a5c03136ca5c7dca1259b6f54ffd112",
     "url": "/simple-warehouse-management/index.html"
   },
   {
-    "revision": "241550b09dea03175229",
+    "revision": "40332bfb7e26577f4dbe",
     "url": "/simple-warehouse-management/static/css/2.6522a1ab.chunk.css"
   },
   {
-    "revision": "241550b09dea03175229",
-    "url": "/simple-warehouse-management/static/js/2.103e2c38.chunk.js"
+    "revision": "40332bfb7e26577f4dbe",
+    "url": "/simple-warehouse-management/static/js/2.1c1f952d.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/simple-warehouse-management/static/js/2.103e2c38.chunk.js.LICENSE.txt"
+    "url": "/simple-warehouse-management/static/js/2.1c1f952d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "39b8900e96f0a39386fe",
-    "url": "/simple-warehouse-management/static/js/main.a26b5d3a.chunk.js"
+    "revision": "333f0d2407ef2e9b7dc4",
+    "url": "/simple-warehouse-management/static/js/main.6a9a1674.chunk.js"
   },
   {
     "revision": "c053df80c4cc1694298c",
