@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11f09f53bb064423a8d433f7907d7c0f",
+    "revision": "a61292b9b1702ededf9b3c36e2d59195",
     "url": "/simple-warehouse-management/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-warehouse-management/static/js/2.103e2c38.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1a9eabc748322d947db1",
-    "url": "/simple-warehouse-management/static/js/main.c3dadb5b.chunk.js"
+    "revision": "39b8900e96f0a39386fe",
+    "url": "/simple-warehouse-management/static/js/main.a26b5d3a.chunk.js"
   },
   {
     "revision": "c053df80c4cc1694298c",
