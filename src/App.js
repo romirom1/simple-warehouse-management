@@ -4,13 +4,13 @@ import 'semantic-ui-css/semantic.min.css';
 import Warehouse from "./components/Warehouse";
 import SKU from "./components/SKU";
 import database from "./resources/database";
-import {Container, Header, Menu} from 'semantic-ui-react';
+import {Container, Header, Menu, Card} from 'semantic-ui-react';
 
 class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      'activeItem' : window.location.pathname === '/' ? 'home' : window.location.pathname.slice(1),
+      'activeItem' : window.location.hash === '#/' ? 'home' : window.location.hash.slice(2),
       'data'       : Object.assign(database)
     }
     this.handleItemClick = this.handleItemClick.bind(this)
@@ -68,7 +68,7 @@ class App extends Component{
     return (
       <Router basename='/'>
           <Container>
-            <Menu pointing secondary>
+            <Menu pointing secondary color='teal'>
               <Menu.Item
                 name='home'
                 active={activeItem === 'home'}
@@ -102,10 +102,16 @@ class App extends Component{
               <Route path="/sku">
                 <SKU data={data} addStok={this.addStok} ambilStok={this.ambilStok}/>
               </Route>
-              <Route path="/">
-                <Header as='h3' textAlign='center'>
-                  Dibuat oleh Romadlon Rahmatulloh
-                </Header>
+              <Route exact path="/">
+                <Card link centered style={{width:'50%'}}
+                  image='https://image.freepik.com/free-vector/logistic-services-with-warehouse-building_24877-54384.jpg'
+                  header='By Rom'
+                  meta='Developer'
+                />
+                {/*<Image bordered centered rounded src={'https://image.freepik.com/free-vector/logistic-services-with-warehouse-building_24877-54384.jpg'}/>*/}
+                {/*<Header as='h4' textAlign='center'>*/}
+                {/*  By Rom*/}
+                {/*</Header>*/}
               </Route>
           </Container>
       </Router>

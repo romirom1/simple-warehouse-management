@@ -166,7 +166,7 @@ class SKU extends Component{
   render() {
     const {sku, modalRincian, errors, fields, modalTambahSKU, modalAmbilSKU, activePage} = this.state
     return (
-        <Card fluid>
+        <Card fluid color='teal' link>
           <Card.Content>
             <Card.Header textAlign='center'>Stok SKU</Card.Header>
           </Card.Content>
@@ -179,7 +179,7 @@ class SKU extends Component{
               Ambil Stok SKU
             </Button>
 
-            <Table celled>
+            <Table color='teal' selectable singleLine>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell width='3'>SKU</Table.HeaderCell>
@@ -193,11 +193,11 @@ class SKU extends Component{
                   this.data().slice(5*(activePage-1),5*(activePage-1)+5).map((e, index)=>
                     <Table.Row key={index}>
                       <Table.Cell>
-                        <Label ribbon>{e.sku}</Label>
+                        <Label ribbon color='teal'>{e.sku}</Label>
                       </Table.Cell>
                       <Table.Cell>{e.stok}</Table.Cell>
                       <Table.Cell>
-                        <Button basic color='green' onClick={()=>{
+                        <Button basic color='teal' onClick={()=>{
                           this.toggleModal()
                           this.setState({
                             sku : {
@@ -217,7 +217,7 @@ class SKU extends Component{
               <Table.Footer>
                 <Table.Row>
                   <Table.HeaderCell colSpan='3'>
-                    <Pagination floated='right'
+                    <Pagination color='teal' floated='right'
                                 boundaryRange={0}
                                 defaultActivePage={1}
                                 ellipsisItem={null}
@@ -324,7 +324,7 @@ class SKU extends Component{
               <Button color='red' onClick={this.toggleModalTambahSKU}>
                 <Icon name='remove' /> Batal
               </Button>
-              <Button color='green' onClick={this.SKUTambahSubmit}>
+              <Button color='teal' onClick={this.SKUTambahSubmit}>
                 <Icon name='checkmark' /> Tambah
               </Button>
             </Modal.Actions>
@@ -392,7 +392,7 @@ class SKU extends Component{
               <Button color='red' onClick={this.toggleModalAmbilSKU}>
                 <Icon name='remove' /> Batal
               </Button>
-              <Button color='green' onClick={this.SKUAmbilSubmit}>
+              <Button color='teal' onClick={this.SKUAmbilSubmit}>
                 <Icon name='checkmark' /> Ambil
               </Button>
             </Modal.Actions>

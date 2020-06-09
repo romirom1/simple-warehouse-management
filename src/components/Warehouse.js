@@ -14,7 +14,12 @@ class Warehouse extends Component{
   }
 
   openModal = (e) => this.setState({
-      modalTambahGudang : true
+      modalTambahGudang : true,
+      fields : {
+        id_gudang : '',
+        kapasitas_maks : ''
+      },
+      errors : {},
     })
 
   tutupModal = (e) => this.setState({
@@ -89,13 +94,13 @@ class Warehouse extends Component{
     const {data} = this.props
     const {modalTambahGudang, fields, errors, activePage} = this.state
     return (
-        <Card fluid>
+        <Card fluid color='teal' link>
           <Card.Content>
             <Card.Header textAlign='center'>Warehouse</Card.Header>
           </Card.Content>
           <Card.Content>
             <Button basic color='teal' onClick={this.openModal}>Tambah Gudang</Button>
-            <Table celled>
+            <Table color='teal' selectable singleLine>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell width='2'>Gudang</Table.HeaderCell>
@@ -110,7 +115,7 @@ class Warehouse extends Component{
                   data.slice(5*(activePage-1),5*(activePage-1)+5).map((gudang, index)=>
                     <Table.Row key={index}>
                       <Table.Cell>
-                        <Label ribbon>{gudang.id_gudang}</Label>
+                        <Label ribbon color='teal'>{gudang.id_gudang}</Label>
                       </Table.Cell>
                       <Table.Cell>{gudang.kapasitas_maks}</Table.Cell>
                       <Table.Cell>{gudang.terisi}</Table.Cell>
@@ -123,7 +128,7 @@ class Warehouse extends Component{
               <Table.Footer>
                 <Table.Row>
                   <Table.HeaderCell colSpan='4'>
-                    <Pagination floated='right'
+                    <Pagination color='teal' floated='right'
                                 boundaryRange={0}
                                 defaultActivePage={1}
                                 ellipsisItem={null}
@@ -175,7 +180,7 @@ class Warehouse extends Component{
               <Button color='red' onClick={this.tutupModal}>
                 <Icon name='remove' /> Batal
               </Button>
-              <Button color='green' onClick={this.gudangSubmit}>
+              <Button color='teal' onClick={this.gudangSubmit}>
                 <Icon name='checkmark' /> Tambah
               </Button>
             </Modal.Actions>
