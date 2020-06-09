@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/simple-warehouse-management/static/js/main.ac074fa6.chunk.js",
-    "main.js.map": "/simple-warehouse-management/static/js/main.ac074fa6.chunk.js.map",
+    "main.js": "/simple-warehouse-management/static/js/main.c75376c1.chunk.js",
+    "main.js.map": "/simple-warehouse-management/static/js/main.c75376c1.chunk.js.map",
     "runtime-main.js": "/simple-warehouse-management/static/js/runtime-main.c06c5247.js",
     "runtime-main.js.map": "/simple-warehouse-management/static/js/runtime-main.c06c5247.js.map",
     "static/css/2.6522a1ab.chunk.css": "/simple-warehouse-management/static/css/2.6522a1ab.chunk.css",
     "static/js/2.1c1f952d.chunk.js": "/simple-warehouse-management/static/js/2.1c1f952d.chunk.js",
     "static/js/2.1c1f952d.chunk.js.map": "/simple-warehouse-management/static/js/2.1c1f952d.chunk.js.map",
     "index.html": "/simple-warehouse-management/index.html",
-    "precache-manifest.8e3c72fe8291232b937c4c522dcadc39.js": "/simple-warehouse-management/precache-manifest.8e3c72fe8291232b937c4c522dcadc39.js",
+    "precache-manifest.8a31ed59749cd327e1ab9e4b0e7c069e.js": "/simple-warehouse-management/precache-manifest.8a31ed59749cd327e1ab9e4b0e7c069e.js",
     "service-worker.js": "/simple-warehouse-management/service-worker.js",
     "static/css/2.6522a1ab.chunk.css.map": "/simple-warehouse-management/static/css/2.6522a1ab.chunk.css.map",
     "static/js/2.1c1f952d.chunk.js.LICENSE.txt": "/simple-warehouse-management/static/js/2.1c1f952d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c06c5247.js",
     "static/css/2.6522a1ab.chunk.css",
     "static/js/2.1c1f952d.chunk.js",
-    "static/js/main.ac074fa6.chunk.js"
+    "static/js/main.c75376c1.chunk.js"
   ]
 }
